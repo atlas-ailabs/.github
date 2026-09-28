@@ -1,0 +1,7 @@
+:root{--bg:#161817;--fg:#f4f1ea;--muted:#9a9a93;--soft:#c9c6bf;--line:rgba(244,241,234,.10);--chip:rgba(255,107,53,.12);--accent:#ff6b35;--grid:rgba(244,241,234,.045)}
+body.light{--bg:#fbf9f4;--fg:#101211;--muted:#6b6b64;--soft:#34342f;--line:rgba(16,18,17,.10);--grid:rgba(16,18,17,.045)}
+*{margin:0;box-sizing:border-box}
+html,body{width:1280px;overflow:hidden;background:transparent}
+.card{position:absolute;inset:0;background:var(--bg);border:1px solid var(--line);border-radius:22px;overflow:hidden;font-family:'Space Grotesk',sans-serif;color:var(--fg)}
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:3px;color:var(--accent)}
+.mono{font-family:'IBM Plex Mono',monospace}

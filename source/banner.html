@@ -1,0 +1,33 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+:root{--bg:#101211;--fg:#f4f1ea;--muted:#9a9a93;--line:rgba(244,241,234,.07);--accent:#ff6b35}
+body.light{--bg:#f4f1ea;--fg:#101211;--muted:#5d5d57;--line:rgba(16,18,17,.07)}
+*{margin:0;box-sizing:border-box}
+html,body{width:1280px;height:400px;overflow:hidden}
+body{background:var(--bg);color:var(--fg);font-family:'Space Grotesk',sans-serif;position:relative;
+ background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+ background-size:40px 40px;background-position:-1px -1px}
+.glow{position:absolute;right:-160px;top:-220px;width:720px;height:720px;border-radius:50%;
+ background:radial-gradient(circle,rgba(255,107,53,.28),rgba(255,107,53,0) 62%)}
+.wrap{position:absolute;inset:0;padding:64px 80px;display:flex;flex-direction:column;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:16px}
+.brand svg{width:64px;height:64px}
+.word{font-size:44px;font-weight:600;letter-spacing:-2.5px;line-height:1}
+.sub{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:3px;line-height:1.35;color:var(--muted);margin-left:2px}
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:3px;color:var(--accent);margin-bottom:18px}
+h1{font-size:58px;font-weight:500;letter-spacing:-2.2px;line-height:1.02;max-width:900px}
+h1 span{color:var(--muted)}
+.big-mark{position:absolute;right:70px;bottom:40px;width:300px;height:300px;opacity:.95}
+</style></head><body>
+<div class="glow"></div>
+<svg class="big-mark" viewBox="0 0 40 40"><g fill="#ff6b35"><path d="M5 32 17.5 7H25L12.5 32H5Z"/><path d="m23.5 17 12 15H25.5L19 24l4.5-7Z"/><path d="M16 29h9l2.4 3H14.5l1.5-3Z"/></g></svg>
+<div class="wrap">
+ <div class="brand"><div class="word">atlas</div><div class="sub">AI<br>LABS</div></div>
+ <div>
+  <div class="eyebrow">INTELIGÊNCIA QUE MOVE NEGÓCIOS</div>
+  <h1>Sua empresa pode fazer mais.<br><span>Sem fazer tudo manualmente.</span></h1>
+ </div>
+</div>
+<script>if(location.hash==='#light')document.body.classList.add('light')</script>
+</body></html>

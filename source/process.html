@@ -1,0 +1,25 @@
+<!doctype html><html><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=block" rel="stylesheet"><link rel="stylesheet" href="base.css"><style>
+html,body{height:460px}
+.card{padding:46px 56px}
+.top{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:44px}
+h2{font-size:36px;font-weight:500;letter-spacing:-1.2px;line-height:1.1;margin-top:16px}
+h2 span{color:var(--muted)}
+.steps{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.track{position:absolute;left:14px;right:14px;top:14px;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent) 50%,var(--line) 50%);background-size:14px 2px;opacity:.8}
+.step{position:relative}
+.dot{width:30px;height:30px;border-radius:50%;background:var(--bg);border:2px solid var(--accent);display:grid;place-items:center;margin-bottom:24px}
+.dot i{width:10px;height:10px;border-radius:50%;background:var(--accent)}
+.lbl{display:flex;gap:12px;align-items:baseline;margin-bottom:10px}
+.lbl .n{font-size:13px;color:var(--muted);letter-spacing:2px}
+.lbl .t{font-size:14px;letter-spacing:3px;color:var(--accent)}
+h3{font-size:26px;font-weight:500;letter-spacing:-.6px;margin-bottom:10px}
+p{font-size:18px;line-height:1.45;color:var(--soft);max-width:330px}
+.note{font-size:15px;color:var(--muted);text-align:right;max-width:300px;line-height:1.4}
+</style></head><body><div class="card">
+<div class="top"><div><div class="eyebrow">DO PRIMEIRO CONTATO À PRÁTICA</div><h2>Seu processo é o ponto de partida.<br><span>A tecnologia vem para ajudar.</span></h2></div>
+<div class="note">Cada empresa tem seu ritmo. O escopo e as etapas são definidos junto com você.</div></div>
+<div class="steps"><div class="track"></div>
+ <div class="step"><div class="dot"><i></i></div><div class="lbl mono"><span class="n">01</span><span class="t">MAPEAR</span></div><h3>Primeiro, o seu negócio.</h3><p>Entendemos sua rotina, suas ferramentas e onde o trabalho está travando.</p></div>
+ <div class="step"><div class="dot"><i></i></div><div class="lbl mono"><span class="n">02</span><span class="t">CONECTAR</span></div><h3>Depois, a solução certa.</h3><p>Desenvolvemos e integramos a automação ao processo que faz sentido para você.</p></div>
+ <div class="step"><div class="dot"><i></i></div><div class="lbl mono"><span class="n">03</span><span class="t">EVOLUIR</span></div><h3>Evoluir faz parte.</h3><p>Validamos o funcionamento e definimos os próximos ajustes com sua equipe.</p></div>
+</div></div><script>if(location.hash==="#light")document.body.classList.add("light")</script></body></html>
